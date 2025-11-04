@@ -23,10 +23,10 @@ const Header = ({ onMenuClick }) => {
           <input
             type="text"
             placeholder="Search"
-            className="flex-1 border border-gray-300 rounded-l-full px-4 py-2 outline-none text-sm"
+            className="flex-1 border border-gray-300 rounded-l-full px-4 py-2 outline-none text-sm focus:border-blue-500 font-semibold transition-colors duration-200" 
           />
           <button className="bg-gray-50 border border-l-0 border-gray-300 px-6 py-2 rounded-r-full hover:bg-gray-100">
-            <Search size={20} />
+            <Search size={22} />
           </button>
         </div>
       </div>

@@ -12,9 +12,9 @@ import {
 
 const Sidebar = () => {
   const mainMenu = [
-    { icon: Home, label: 'Home', active: true },
-    { icon: MonitorPlay, label: 'Shorts' },
-    { icon: PlaySquare, label: 'Subscriptions' },
+    { icon: Home, label: 'Home', active: true},
+    { icon: MonitorPlay, label: 'Shorts'},
+    { icon: PlaySquare, label: 'Subscriptions'},
   ];
 
   const library = [
@@ -31,7 +31,7 @@ const Sidebar = () => {
     'Frontend',
     'SpookyCat',
     'BEFF CHANNEL',
-    'ZenyYT',
+    'NetherPlay',
     'Daquavis',
   ];
 
