@@ -1,59 +1,61 @@
-import React from 'react';
+import React from "react";
 import {
   Home,
-  MonitorPlay ,
+  MonitorPlay,
   PlaySquare,
   Clock,
   ThumbsUp,
   Music,
   Gamepad2,
   Settings,
-} from 'lucide-react';
+} from "lucide-react";
 
 const Sidebar = () => {
   const mainMenu = [
-    { icon: Home, label: 'Home', active: true},
-    { icon: MonitorPlay, label: 'Shorts'},
-    { icon: PlaySquare, label: 'Subscriptions'},
+    { icon: Home, label: "Home", active: true },
+    { icon: MonitorPlay, label: "Shorts" },
+    { icon: PlaySquare, label: "Subscriptions" },
   ];
 
   const library = [
-    { icon: PlaySquare, label: 'Library' },
-    { icon: Clock, label: 'History' },
-    { icon: Clock, label: 'Watch later' },
-    { icon: ThumbsUp, label: 'Liked videos' },
-    { icon: Music, label: 'Music' },
-    { icon: Gamepad2, label: 'Gaming' },
+    { icon: PlaySquare, label: "Library" },
+    { icon: Clock, label: "History" },
+    { icon: Clock, label: "Watch later" },
+    { icon: ThumbsUp, label: "Liked videos" },
+    { icon: Music, label: "Music" },
+    { icon: Gamepad2, label: "Gaming" },
   ];
 
   const subscriptions = [
-    'DomerGrief',
-    'Frontend',
-    'SpookyCat',
-    'BEFF CHANNEL',
-    'NetherPlay',
-    'Daquavis',
+    "DomerGrief",
+    "Frontend",
+    "SpookyCat",
+    "BEFF CHANNEL",
+    "NetherPlay",
+    "Daquavis",
   ];
 
   return (
-    <aside className="fixed left-0 top-14 h-full w-60 bg-white border-r 
+    <aside
+      className="fixed left-0 top-14 h-full w-60 bg-white border-r 
     overflow-hidden hover:overflow-y-auto 
-    transition-all duration-200">
+    transition-all duration-200"
+    >
       <div className="py-2">
         {mainMenu.map((item, index) => (
           <button
             key={index}
             className={`w-full flex items-center gap-6 px-6 py-2.5 hover:bg-gray-100 ${
-              item.active ? 'bg-gray-100' : ''
+              item.active ? "bg-gray-100" : ""
             }`}
           >
             <item.icon
               size={22}
-              className={`${item.active ? 'text-red-600' : 'text-gray-700'}`}
+              className={`${item.active ? "text-red-600" : "text-gray-700"}`}
             />
             <span
               className={`text-sm ${
-                item.active ? 'font-medium text-gray-900' : 'text-gray-700'
+                item.active ? "font-medium text-gray-900" : "text-gray-700"
               }`}
             >
               {item.label}

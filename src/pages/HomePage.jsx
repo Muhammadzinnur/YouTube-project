@@ -10,7 +10,8 @@ const videos = [
     views: "17 koʻrildi",
     time: "1 oy oldin",
     duration: "17:30",
-    thumbnail: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&h=225&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&h=225&fit=crop",
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const videos = [
     views: "6.4M koʻrildi",
     time: "2 hafta oldin",
     duration: "12:43",
-    thumbnail: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=225&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=225&fit=crop",
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ const videos = [
     views: "2.8M koʻrildi",
     time: "5 oy oldin",
     duration: "10:12",
-    thumbnail: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&h=225&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&h=225&fit=crop",
   },
   {
     id: 4,
@@ -37,7 +40,8 @@ const videos = [
     views: "4.1M koʻrildi",
     time: "2 oy oldin",
     duration: "14:21",
-    thumbnail: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=225&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=225&fit=crop",
   },
   {
     id: 5,
@@ -46,7 +50,8 @@ const videos = [
     views: "15 koʻrildi",
     time: "6 oy oldin",
     duration: "9:15",
-    thumbnail: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&h=225&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&h=225&fit=crop",
   },
   {
     id: 6,
@@ -55,7 +60,8 @@ const videos = [
     views: "32 koʻrildi",
     time: "3 hafta oldin",
     duration: "8:09",
-    thumbnail: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=225&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=225&fit=crop",
   },
   {
     id: 7,
@@ -64,7 +70,8 @@ const videos = [
     views: "100K koʻrildi",
     time: "3 hafta oldin",
     duration: "7:45",
-    thumbnail: "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=400&h=225&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=400&h=225&fit=crop",
   },
   {
     id: 8,
@@ -73,7 +80,8 @@ const videos = [
     views: "3.2M koʻrildi",
     time: "1 oy oldin",
     duration: "11:20",
-    thumbnail: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=225&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=225&fit=crop",
   },
   {
     id: 9,
@@ -82,7 +90,8 @@ const videos = [
     views: "5.1M koʻrildi",
     time: "4 kun oldin",
     duration: "15:30",
-    thumbnail: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=225&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=225&fit=crop",
   },
 ];
 
@@ -109,8 +118,6 @@ const HomePage = () => {
 
       <div className="flex-1">
         <Header />
-
-        {/* Kategoriya paneli */}
         <div className="sticky top-14 z-40 bg-white border-b border-gray-300 overflow-x-auto">
           <div className="px-4 py-3 flex gap-3 whitespace-nowrap">
             {categories.map((category) => (
@@ -128,8 +135,6 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-
-        {/* Videolar grid - 3 ustunli */}
         <main className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((video) => (
             <div
@@ -144,19 +149,18 @@ const HomePage = () => {
                   className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                   loading="lazy"
                 />
-                
+
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="bg-black bg-opacity-60 rounded-full p-4">
-                    <svg 
-                      className="w-12 h-12 text-white" 
-                      fill="currentColor" 
+                    <svg
+                      className="w-12 h-12 text-white"
+                      fill="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path d="M8 5v14l11-7z"/>
+                      <path d="M8 5v14l11-7z" />
                     </svg>
-                  </div>
+                  </div>{" "}
                 </div>
-                
                 <span className="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-1.5 py-0.5 rounded">
                   {video.duration}
                 </span>
@@ -170,7 +174,7 @@ const HomePage = () => {
                   <p className="text-gray-600 text-xs mt-1">{video.channel}</p>
                 </div>
                 <p className="text-gray-500 text-xs mt-1">
-                  {video.views} • {video.time}
+                  {video.views} {video.time}
                 </p>
               </div>
             </div>
