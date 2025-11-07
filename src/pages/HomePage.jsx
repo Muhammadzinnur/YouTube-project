@@ -165,7 +165,6 @@ const HomePage = () => {
                   {video.duration}
                 </span>
               </div>
-
               <div className="p-3 flex flex-col justify-between h-[120px]">
                 <div>
                   <h3 className="font-semibold text-sm line-clamp-2 group-hover:text-blue-600">
