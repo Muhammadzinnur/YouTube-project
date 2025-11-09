@@ -113,7 +113,7 @@ const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState("Football");
 
   return (
-    <div className="flex bg-white text-black min-h-screen">
+    <div className="ms-30  flex bg-white text-black min-h-screen">
       <Sidebar />
 
       <div className="flex-1">
@@ -159,7 +159,8 @@ const HomePage = () => {
                     >
                       <path d="M8 5v14l11-7z" />
                     </svg>
-                  </div>{" "}
+                  </div>
+                  {""}
                 </div>
                 <span className="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-1.5 py-0.5 rounded">
                   {video.duration}

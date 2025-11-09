@@ -65,7 +65,8 @@ const Sidebar = ({ activeItem, setActiveItem, collapsed }) => {
   return (
     <aside
       className={`fixed left-0 top-14 h-full bg-white border-r 
-        overflow-hidden hover:overflow-y-auto transition-all duration-200
+        overflow-hidden hover:overflow-y-auto 
+        transition-all duration-200
         ${collapsed ? "w-20" : "w-60"}`}
     >
       <div className="py-2">
@@ -101,8 +102,8 @@ const Sidebar = ({ activeItem, setActiveItem, collapsed }) => {
             className={`w-full flex items-center gap-3 px-6 py-2 rounded-lg transition-all duration-150
               ${
                 activeItem === name
-                  ? "bg-gray-100"
-                  : "hover:bg-gray-100 active:scale-[0.98]"
+                  ? "bg-gray-200"
+                  : "hover:bg-gray-300 active:scale-[0.98]"
               }
             `}
           >

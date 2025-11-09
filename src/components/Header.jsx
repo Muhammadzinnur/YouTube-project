@@ -32,8 +32,6 @@ export default function Header() {
             </div>
           </a>
         </div>
-
-        {/* Center Section - Search (visible on desktop or when mobile search is open) */}
         <div
           className={`flex-1 max-w-2xl transition-all duration-300 ${
             mobileSearchOpen ? "flex mx-0" : "flex mx-4 max-[599px]:hidden"
